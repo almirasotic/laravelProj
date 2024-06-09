@@ -1,0 +1,86 @@
+.theme_Item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 45%;
+    height: 300px; /* Postavite fiksnu visinu */
+    overflow: hidden; /* Sakrijte sadržaj koji prelazi zadatu visinu */
+    position: relative; /* Omogućava apsolutno pozicioniranje unutar kartice */
+    margin: 20px; /* Dodaje razmak oko svake kartice *//* Dodaje razmak između kartica */
+}
+
+.theme_Item:last-child {
+    margin-bottom: 0; /* Uklanja donji razmak na poslednjoj kartici */
+}
+
+.theme_Item .content {
+    overflow: auto; /* Omogućava skrolovanje unutar kartice ako ima previše sadržaja */
+    width: 100%;
+    height: 100%;
+}
+
+
+.theme_User {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.theme_User img {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.themes_Image {
+    width: 50px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.theme_createDate {
+    order: 1;
+}
+
+.themes_Title {
+    margin-bottom: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .theme_Item {
+        width: 90%;
+        margin: 20px auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .theme_User {
+        order: 2;
+        margin: 0;
+        text-align: center;
+    }
+
+    .themes_Image {
+        order: 1;
+        margin-top: 0;
+    }
+
+    .theme_createDate {
+        display: none;
+    }
+
+    .theme_User img {
+        display: block;
+    }
+
+    .themes_Title {
+        margin-bottom: 10px;
+    }
+}

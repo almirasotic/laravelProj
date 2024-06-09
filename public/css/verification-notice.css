@@ -1,0 +1,46 @@
+.verification_body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+}
+
+.verification_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5%;
+    margin: 5%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    font-size: 18px;
+
+}
+
+.verification_container h1{
+    color: black;
+    font-size: 28px;
+    margin-bottom: 5%;
+}
+
+.card-body{
+    color: black;
+    text-align: center;
+}
+
+.verification_button{
+    margin-top: 10%;
+    padding: 3%;
+    border-radius: 80px;
+    border: 2px solid green;
+    color: black;
+    font-weight: bold;
+
+}
+
+

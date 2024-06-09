@@ -1,0 +1,125 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.themes_Body {
+    margin-bottom: 20px;
+    padding: 1%;
+    margin-top: 5%;
+    min-height: 65vh;
+}
+
+/* .containerr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+} */
+
+
+
+.theme_Item {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: black;
+    border-radius: 5px;
+}
+
+.theme_createDate{
+    color: black;
+    font-weight: 400;
+    float: right;
+    font-size: 13px;
+    margin-top: 15px;
+    padding-right: 15px;
+    font-style: italic;
+}
+
+
+
+.themes_Image {
+    width: 35%;
+    height: 95%;
+    position: relative;
+    overflow: hidden;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+
+.themes_Image img {
+    max-width: 100%;
+    border-radius: 2px;
+    align-items:right;
+    border-radius:2px;
+    height: 80%;
+    object-fit: cover;
+    margin-top: 10%;
+}
+
+
+
+.themes_Content {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+
+.theme_User{
+    width: 15%;
+    height: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.themes_Title {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+
+.themes_Title:hover{
+    color: black;
+}
+
+
+
+.themes_Text {
+    font-size: 15px;
+    color: black;
+
+}
+
+.side_div {
+    width: 40%;
+    height: 300px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 5%;
+    margin-right: 3%;
+    padding: 15px;
+}

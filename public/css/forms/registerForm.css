@@ -1,0 +1,137 @@
+.form_body{
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+    margin-top: -75px;
+}
+
+
+.form_container{
+    width: 38%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    border-radius: 10px;
+
+}
+
+.form_container h2{
+    height: 5vh;
+    color: black;
+    font-size: 28px;
+}
+
+.form_container div{
+    text-align: center;
+    width: 80%;
+    border-bottom: 1px solid #728651;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.form_container form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form_container label{
+    color: black;
+}
+
+.form_container input,textarea{
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid gray;
+}
+.form_container button {
+    border: none;
+    background-color: rgb(42, 125, 220);
+    border-radius: 90px;
+    margin-left: 135px;
+    width: 40%;
+    padding: 12px;
+    color: white;
+    font-size: 17px;
+}
+
+.form_container button:hover {
+    text-decoration: none;
+}
+
+
+
+
+.form_container p{
+    margin-top: 6%;
+    color: black;
+    font-size: 17px;
+}
+
+.form_container a{
+    text-decoration: underline;
+    color: #728651;
+    margin-bottom: 5%;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+
+.form_container a:hover{
+    text-decoration: underline;
+    color: #384227;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 12px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.custom-file-upload:hover {
+    border: 1px solid blue;
+}
+
+
+
+@media (max-width:767px){
+    .form_container{
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .form_container{
+        width:50%;
+        height: 40vh;
+    }
+
+    .form_container h2{
+        height: 5vh;
+        font-size: 28px;
+    }
+
+    .form_container div{
+        height: 5vh;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+}
+
+@media (width:1024px){
+    .form_container{
+        width:40%;
+    }
+}

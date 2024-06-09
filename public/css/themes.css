@@ -1,0 +1,385 @@
+
+.themes_Body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin-bottom: 80px;
+}
+
+
+/* .newsFeed{
+  width: 20%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  min-height: fit-content;
+  border-radius: 5px;
+  padding: 1%;
+  background-color: white;
+}
+
+
+.newsFeed h2{
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+
+
+.news-feed-item{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  border-bottom: 1px solid black;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  padding-top: 5%;
+}
+
+
+.add-news-feed-form form{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+
+.add-news-feed-form textarea{
+  width: 100%;
+  height: 70px;
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.add-news-feed-form button{
+    border: 1px solid green;
+    background-color: white;
+    color:black;
+    border-radius: 5px;
+    align-self: center;
+    margin: 5%;
+    padding: 2%;
+    font-weight: bold;
+} */
+
+.newsFeed {
+    width: 50%;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  */
+    /* border-radius: 10px; */
+    padding: 2%;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.newsFeed h2 {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.add-news-feed-form {
+    margin-top: 20px; /* Dodajte razmak između naslova i forme za dodavanje vesti */
+}
+
+.add-news-feed-form label {
+    display: block; /* Postavite labelu da bude blok element kako bi zauzela celu širinu */
+    margin-bottom: 10px; /* Dodajte razmak ispod labela */
+}
+
+.add-news-feed-form textarea {
+    width: 100%; /* Postavite širinu teksta na 100% */
+    padding: 10px; /* Povećajte unutrašnji razmak */
+    border: 1px solid #ccc; /* Dodajte tanku ivicu */
+    border-radius: 5px; /* Zaobljene ivice */
+}
+
+.add-news-feed-form button {
+    display: block; /* Postavite dugme da bude blok element kako bi zauzelo celu širinu */
+    width: 100%; /* Postavite širinu dugmeta na 100% */
+    padding: 10px; /* Povećajte unutrašnji razmak */
+    margin-top: 10px; /* Dodajte razmak između forme i dugmeta */
+    animation: changeColors 10s infinite;
+    color: white; /* Bela boja teksta */
+    border: none; /* Uklonite ivicu */
+    border-radius: 5px; /* Zaobljene ivice */
+    cursor: pointer; /* Promenite kursor na pokazivač prilikom prelaska preko dugmeta */
+    transition: background-color 0.3s; /* Dodajte efekat prelaska */
+}
+
+.add-news-feed-form button:hover {
+    background-color: #0056b3; /* Promenite boju pozadine dugmeta prilikom prelaska preko njega */
+}
+
+@keyframes changeColors {
+    0% {
+        background-color: rgb(39, 40, 34); /* Monokai Background */
+        color: white; /* Contrasting text color */
+    }
+    25% {
+        background-color: rgb(48, 63, 159); /* Indigo */
+        color: white; /* Contrasting text color */
+    }
+    50% {
+        background-color: rgb(0, 121, 107); /* Teal */
+        color: white; /* Contrasting text color */
+    }
+    75% {
+        background-color: rgb(55, 71, 79); /* Blue Grey */
+        color: white; /* Contrasting text color */
+    }
+    100% {
+        background-color: rgb(39, 40, 34); /* Monokai Background */
+        color: white; /* Contrasting text color */
+    }
+}
+
+
+
+
+.delete_newsFeed {
+    font-size: 14px;
+    color: red;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.themes_Grid {
+    width: 72%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 44px;
+    height: 30%;
+}
+
+
+.theme_Item {
+    width: 92%;
+    height: 250px;
+    margin-bottom: 15px;
+    background-color: white;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+    color: black;
+    /* border-radius: 5px; */
+}
+
+.theme_createDate{
+    color: black;
+    font-weight: 400;
+    float: right;
+    font-size: 13px;
+    margin-top: 15px;
+    padding-right: 15px;
+    font-style: italic;
+}
+
+
+
+.themes_Image {
+    width: 35%;
+    height: 95%;
+    position: relative;
+    overflow: hidden;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date{
+    width: 100%;
+    height: 15%;
+}
+
+.themes_Image img {
+    max-width: auto;
+    border-radius: 2px;
+    align-items:right;
+    border-radius:2px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.themes_Content {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+
+.theme_User{
+    width: 15%;
+    height: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+.themes_Title {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+.themes_Title:hover{
+    color: black;
+}
+
+
+.themes_Text {
+    font-size: 15px;
+    color: black;
+
+}
+
+
+.create_new_theme{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.create_new_theme a{
+    text-decoration: none;
+    border: none;
+    border: 1px solid green;
+    border-radius: 5px;
+    align-self: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: color 0.1s;
+    color: black;
+    font-weight: bold;
+}
+
+
+.create_new_theme a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+
+.new_theme{
+    /* background-color: whitesmoke; */
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); */
+    border: 5px;
+    padding: 20px;
+    width: 20%;
+    height: 350px;
+}
+
+
+.go-back-button {
+    display: none;
+}
+
+.no_theme{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 200px;
+    margin-top: 5%;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Dodati responzivni CSS za telefone */
+
+/* Za ekrane širine do 600 piksela */
+@media only screen and (max-width: 600px) {
+    .themes_Body {
+        flex-direction: column; /* Promenite raspored na kolonu za mobilne uređaje */
+        align-items: center; /* Centriranje sadržaja */
+        padding: 10px; /* Smanjenje prostora za punjenje */
+        margin-bottom: 40px; /* Smanjenje margina ispod tela */
+    }
+
+    .themes_Grid {
+        width: 100%; /* Puni širina kontejnera */
+    }
+
+    .theme_Item {
+        width: 90%; /* Puni širina kontejnera */
+        height: auto; /* Automatska visina */
+        margin-bottom: 20px; /* Povećanje razmaka između stavki */
+    }
+
+    .themes_Image {
+        width: 100%; /* Puni širina slike */
+        height: auto; /* Automatska visina */
+        margin: 0; /* Resetovanje margina */
+    }
+
+    .themes_Content {
+        width: 100%; /* Puni širina sadržaja */
+        padding-left: 0; /* Resetovanje unutrašnjeg prostora sa leve strane */
+        margin-top: 10px; /* Povećanje margina na vrhu sadržaja */
+    }
+
+    .theme_User {
+        width: 100%; /* Puni širina korisnika */
+        height: auto; /* Automatska visina */
+        padding: 10px; /* Smanjenje prostora za punjenje */
+        justify-content: center; /* Centriranje sadržaja */
+        align-items: center; /* Centriranje sadržaja */
+    }
+
+    .theme_createDate {
+        float: none; /* Poništavanje float-a */
+        width: 100%; /* Puni širina datuma */
+        margin-top: 10px; /* Povećanje margina na vrhu datuma */
+        padding-right: 0; /* Resetovanje unutrašnjeg prostora sa desne strane */
+        text-align: center; /* Centriranje teksta */
+    }
+
+    .create_new_theme {
+        margin-top: 20px; /* Povećanje margina između forme i dugmeta */
+    }
+
+    .create_new_theme a {
+        width: 100%; /* Puni širina dugmeta */
+        margin-bottom: 10px; /* Povećanje margina ispod dugmeta */
+    }
+
+    .new_theme {
+        width: 100%; /* Puni širina nove teme */
+        height: auto; /* Automatska visina */
+        padding: 10px; /* Smanjenje prostora za punjenje */
+        margin-bottom: 20px; /* Povećanje margina ispod nove teme */
+    }
+}

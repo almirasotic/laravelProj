@@ -1,0 +1,17 @@
+.message_container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.message_div{
+    width: 15%;
+    color: black;
+    background-color: lightgray;
+    text-align: center;
+    margin: 1%;
+    padding: 0.5%;
+    border-radius: 2px;
+    font-size: large;
+    position: absolute;
+}
